@@ -1,0 +1,1274 @@
+:root{
+    --primary: #1a253f;
+    --dark: #151A33;
+    --secondary: #2b55cc;
+    --info: #4d79f6;
+    --ternary: #848db3;
+    --pure: #eff2f9;
+    --fade: #7081b9;
+    --mild: #8997bd;
+    --footer: #212A4A;
+    --black: #060b1b;
+    --twitter: #4ac7ec;
+    --dribble: #ff5da0;
+    --success: #1ecab8;
+    --danger: #f1646c;
+    --dark-blue: #28365f;
+}
+
+
+/* ############## Global Style ################## */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ############### Body Style ################## */
+body{
+    width: 100%;
+    height: auto;
+    background-color: var(--dark);
+    position: absolute;
+    top: 0;
+}
+
+.width-70{
+    width: 70%;
+}
+
+
+/* ########## Navbar Style Starts Here ################ */
+#navbar-wrapper{
+    width: 100%;
+    height: 4rem;
+    /* position: fixed; */
+    /* top: 0; */
+    z-index: 100;
+    /* border: 2px solid red; */
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+}
+
+#navbar-items-wrapper{
+    /* border: 1px solid red; */
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.9rem 0px;
+}
+
+#logo-wrapper{
+    height: 100%;
+    width: 13rem;
+    /* border: 1px solid blue; */
+    padding: 0.5rem;
+    display: flex;
+    color: var(--pure);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+#logo-image{
+    height: 100%;
+    width: 12%;
+    margin-right: 0.5rem;
+}
+#print-btn-wrapper{
+    height: 100%;
+    width: 6rem;
+    /* border: 1px solid blue; */
+    background-color: var(--secondary);
+    color: var(--pure);
+    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem;
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+}
+#print-btn-wrapper:hover{
+    background-color: var(--info);
+}
+#print-icon{
+    margin-right: 0.5rem;
+}
+
+
+
+/* ############ Navbar Style Ends Here ################# */
+
+
+
+
+
+/* ########### Main CV section style starts here ############### */
+#cv-section{
+    /* border: 1px solid red; */
+    /* height: 230vh; */
+    height: auto;
+    margin: auto;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    background-color: var(--primary);
+    position: relative;
+}
+
+
+/* ############### Profile Picture & Social Contact Style Starts Here ############### */
+#profile-picture-section{
+    /* border: 1px solid blue; */
+    width: 100%;
+    /* height: 27vh; */
+    height: 265px;
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#picture-section{
+    /* border: 1px solid blue; */
+    height: 60%;
+    width: 400px;
+    display: flex;
+}
+
+#social-contact{
+    /* border: 1px solid blue; */
+    height: 60%;
+    width: 400px;
+}
+
+
+/* ############ Profile Picture & Social Contact Left Side Style Starts here ############## */
+#profile-image-wrapper{
+    height: 100%;
+    width: 40%;
+    margin-left: 3rem;
+    position: relative;
+    /* border: 1px solid red; */
+}
+#profile-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+#upload-icon-wrapper{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: var(--secondary);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#upload-icon{
+    font-size: 1.2rem;
+    background-color: var(--secondary);
+    color: var(--pure);
+}
+
+#intro-section{
+    height: 100%;
+    width: 40%;
+    /* border: 1px solid red; */
+    margin-left: 2rem;
+}
+#name-heading{
+    color: var(--fade);
+    margin-top: 25%;
+    font-size: 1.6rem;
+}
+#skill-animation-wrapper{
+    margin-top: 0.5rem;
+    /* border: 1px solid red; */
+    display: inline-block;
+    color: var(--mild);
+}
+
+#animation-bar-wrapper{
+    width: 100%;
+    height: 0.2rem;
+    margin-top: 0.4rem;
+    /* border: 1px solid red; */
+}
+@keyframes animate-bar{
+    from{width: 0%;}
+    to{width: 100%;}
+}
+#animation-bar{
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(to right, var(--secondary), var(--success));
+    animation-name: animate-bar;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+/* ############ Profile picture and Social Contact Left Side Style Ends here ############ */
+
+
+
+
+/* ############# Profile picture and Social Contact Right Side Style Starts here ############# */
+#phone, #email{
+    display: flex;
+    color: var(--mild);
+    font-size: 1.2rem;
+}
+#phone h4, #phone p, #email h4, #email p{
+    margin-left: 1rem;
+}
+#email{
+    margin-top: 1.5rem;
+}
+
+#social-icons-wrapper{
+    height: 2.5rem;
+    width: 8.3rem;
+    margin-top: 1.5rem;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+#facebook, #twitter, #instagram{
+    height: 100%;
+    width: 30%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--pure);
+    cursor: pointer;
+}
+@keyframes animate-social-icons{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+#facebook:hover, #twitter:hover, #instagram:hover{
+    background-color: white;
+    animation-name: animate-social-icons;
+    animation-duration: 1s;
+}
+#facebook{
+    background-color: var(--secondary);
+}
+#facebook:hover{
+    color: var(--secondary);
+    
+}
+#twitter{
+    background-color: var(--twitter);
+}
+#twitter:hover{
+    color: blue;
+}
+#instagram{
+    background-color: var(--dribble);
+}
+#instagram:hover{
+    color: rgb(194, 75, 95);
+}
+
+/* ############# Profile picture and Social Contact Right Side Style Ends here ############# */
+
+
+
+
+/* ########### About Us Section style starts here ################# */
+#about{
+    width: 100%;
+    /* height: 27vh; */
+    height: 265px;
+    /* border: 1px solid blue; */
+    margin-top: 3rem;
+    padding: 0px 2rem;
+    color: var(--pure);
+}
+#about-heading-wrapper{
+    /* border: 1px solid red; */
+    width: 7.2rem;
+}
+.line{
+    height: 0.05rem;
+    width: 100%;
+    background-color: var(--danger);
+    margin-top: 0.5rem;
+}
+#personal-details-container{
+    width: 100%;
+    height: 80%;
+    /* border: 1px solid blue; */
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+#personal-details-left-section{
+    width: 500px;
+    height: 100%;
+    /* border: 1px solid green; */
+}
+#personal-details-right-section{
+    width: 400px;
+    height: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    font-size: 1.1rem;
+}
+#personal-details-left-section h1{
+    font-size: 1.5rem;
+    color: var(--info);
+    margin-bottom: 0.8rem;
+}
+#personal-details-left-section p{
+    color: var(--mild);
+    font-size: 1.2rem;
+}
+#download-cv-btn{
+    height: 2.5rem;
+    width: 8rem;
+    background-color: #848db31f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.8rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+#download-cv-btn p{
+    color: var(--info);
+}
+
+/* ################# About Section Left Side Style ends here ################ */
+
+
+
+
+
+/* #################### About Section Right Side Style starts here ################# */
+#about-me-heading-wrapper{
+    height: 100%;
+    width:9.5rem;
+    /* border: 1px solid red; */
+}
+.about-me-heading{
+    margin-bottom: 1rem;
+    color: var(--mild);
+}
+#about-me-p-wrapper{
+    height: 100%;
+    width: 13rem;
+    /* border: 1px solid red; */
+}
+.about-me-p{
+    margin-bottom: 1rem;
+    color: var(--mild);
+}
+
+/* ############### About section right Side style ends here ################# */
+
+
+
+
+/* ############### Education & Skills Section Style Starts here ################ */
+
+#education-and-skills{
+    /* height: 54vh; */
+    height: 530px;
+    width: 100%;
+    margin-top: 3rem;
+    padding: 0px 2rem;
+    /* border: 1px solid blue; */
+    color: var(--pure);
+}
+#education-and-skills-heading-wrapper{
+    /* border: 1px solid red; */
+    width: 12.5rem;
+}
+#education-and-skills-wrapper{
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-top: 1rem;
+    height: 48vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ########## Education & Skills Left Side style starts here ############# */
+#education-and-skills-left-section{
+    height: 100%;
+    width: 500px;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+#education-and-skills-right-section{
+    width: 40%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    padding-top: 7rem;
+}
+
+
+/* ################ Education  & Experience Section style starts here ############### */
+#education-section{
+    height: 100%;
+    width: 55%;
+    /* border: 1px solid red; */
+}
+#experience-section{
+    height: 100%;
+    width: 40%;
+    /* border: 1px solid red; */
+}
+.education-and-experience-icon-wrapper{
+    /* border: 1px solid red; */
+    height: 7rem;
+    margin-bottom: 1rem;
+}
+.education-and-experience-icon{
+    font-size: 2.8rem;
+    margin: auto;
+    margin-left: 1.3rem;
+    color: var(--mild);
+}
+.education-and-experience-icon-wrapper p{
+    font-size: 1.3rem;
+    margin-top: 0.8rem;
+    color: var(--mild);
+}
+.class-level-container{
+    border-left: 1px solid #7081b94b;
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 7rem;
+    position: relative;
+}
+.class-level-text-wrapper{
+    height: 4.5rem;
+    width: 100%;
+    /* border: 1px solid red; */
+    padding-left:1.2rem;
+}
+.class-level-text-wrapper p{
+    color: var(--mild);
+    font-size: 1.1rem;
+}
+.circle{
+    font-size: 1rem;
+    color: var(--secondary);
+    position: absolute;
+    top: 0;
+    left: -9px;
+}
+
+/* ################ Education section style ends here ################ */
+
+
+
+
+/* ########## Education & Skills Right Side style starts here ############# */
+.skill-wrapper{
+    width: 100%;
+    height: 3rem;
+    color: var(--mild);
+    margin-bottom: 1rem;
+    /* border: 1px solid red; */
+}
+.skill-text-wrapper{
+    display: flex;
+    position: relative;
+    /* border: 1px solid green; */
+}
+
+.skill-bar-wrapper{
+    width: 100%;
+    height: 0.7rem;
+    margin-top: 0.6rem;
+    border-radius: 25px;
+    border: 1px solid #7081b94b;
+    background-color: var(--dark);
+    display: flex;
+    align-items: center;
+}
+.skill-bar{
+    height: 70%;
+    background-color: var(--secondary);
+    border-radius: 25px;
+}
+
+
+
+#html-css-per{
+    position: absolute;
+    right: 22%;
+}
+#html-css-bar{
+    width: 78%;
+}
+#web-design-per{
+    position: absolute;
+    right: 40%;
+}
+#web-design-bar{
+    width: 60%;
+}
+#python-per{
+    position: absolute;
+    right: 20%;
+}
+#python-bar{
+    width: 80%;
+}
+#video-editing-per{
+    position: absolute;
+    right: 10%;
+}
+#video-editing-bar{
+    width: 90%;
+}
+
+/* ########## Education & Skills Right Side style ends here ############# */
+
+
+
+
+
+
+
+/* ################# Increment Counter section style starts here ############## */
+#increment-counter-section{
+    width: 100%;
+    height: 10rem;
+    padding: 0px 2rem;
+    margin-top: 3rem;
+    /* border: 1px solid blue; */
+    background-color: #171718af;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.increment-item-wrapper{
+    width: 13rem;
+    height: 6rem;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+.increment-text{
+    height: 55%;
+    width: 70%;
+    /* border: 1px solid green; */
+    color: var(--mild);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#project-icon{
+    font-size: 2.2rem;
+    margin-right: 1rem;
+    color: yellow;
+}
+#smile-icon{
+    font-size: 2.2rem;
+    margin-right: 1rem;
+    color: var(--success);
+}
+#award-icon{
+    font-size: 2.2rem;
+    margin-right: 1rem;
+    color: var(--dribble);
+}
+
+/* ################# Increment Counter section style ends here ############## */
+
+
+
+
+
+/* ################ Review & Work section style starts here ################ */
+
+#review-and-work-section{
+    /* height: 50vh; */
+    height: 491px;
+    width: 100%;
+    margin-top: 3rem;
+    padding: 0px 2rem;
+    /* border: 1px solid blue; */
+    color: var(--pure);
+}
+
+#review-and-work-heading-wrapper{
+    /* border: 1px solid red; */
+    width: 13.7rem;
+}
+
+#review-and-work-wrapper{
+    width: 100%;
+    /* height: 43vh; */
+    height: 422px;
+    /* border: 1px solid red; */
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* ########### Review section style starts here ############ */
+#review-section-wrapper{
+    height: 100%;
+    width: 40%;
+    /* border: 1px solid green; */
+    position: relative;
+}
+#review-section-wrapper h1{
+    font-size: 5rem;
+    text-align: center;
+    color: var(--info);
+}
+#slider-content-wrapper{
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 20rem;
+    position: absolute;
+}
+#slider-content-wrapper p{
+    /* border: 1px solid red; */
+    height: 7rem;
+    font-size: 1.2rem;
+    color: var(--mild);
+    text-align: center;
+}
+#slider-image-wrapper{
+    /* border: 1px solid red; */
+    height: 4rem;
+    width: 4rem;
+    margin: auto;
+}
+#slider-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+#slider-content-wrapper h2{
+    color: var(--info);
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+#slider-content-wrapper #position{
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+}
+@keyframes animate-slider-para{
+    from{transform: scale(0.5,0.5); opacity:0.5}
+    to{transform: sclae(1,1); opacity:1}
+}
+.animate-slider-pagragraph{
+    animation-name: animate-slider-para;
+    animation-duration: 1s;
+}
+@keyframes animate-slider-name{
+    from{transform: translateX(-20%)}
+    to{transform: translateX(0%)}
+}
+.animate-slider-naam{
+    animation-name: animate-slider-name;
+    animation-duration: 1s;
+}
+@keyframes animate-slider-pos{
+    from{transform: translateX(30%)}
+    to{transform: translateX(0%)}
+}
+.animate-slider-position{
+    animation-name: animate-slider-pos;
+    animation-duration: 1s;
+}
+
+
+/* ############ Review section style ends here ############# */
+
+
+
+/* ########### Work section style starts here ############### */
+#work-section-wrapper{
+    height: 100%;
+    /* width: 40%; */
+    width: 485px;
+    /* border: 1px solid green; */
+}
+#work-menu-wrapper{
+    /* border: 1px solid red; */
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.work-menu{
+    height: 100%;
+    width: 6rem;
+    /* border: 1px solid blue; */
+    padding: 1rem 0px 1rem 0px;
+    font-size: 1.3rem;
+    color: var(--mild);
+    text-align: center;
+    cursor: pointer;
+}
+.work-menu:hover{
+    color: var(--info);
+    border-bottom: 1px solid var(--info);
+}
+.selected-project-tab{
+    color: var(--info);
+    border-bottom: 1px solid var(--info);
+}
+#project-list{
+    /* border: 1px solid blue; */
+    height: 19.5rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-image{
+    height: 9rem;
+    width: 9rem;
+    margin-right: 1rem;
+}
+
+/* ########### Work section style ends here ############## */
+
+
+
+
+
+
+/* ############## Brands section style starts here ############## */
+#brand-section{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 10rem;
+    padding: 0px 2rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.brand-image{
+    height: 6rem;
+    width: 10rem;
+}
+
+/* ############## Brands section style starts here ############## */
+
+
+
+
+
+
+/* ############# Contact Me section style starts here ################ */
+
+#contact{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 500px;
+    padding: 0px 2rem;
+    margin-top: 3rem;
+    /* margin-bottom: 8rem; */
+    color: var(--pure);
+}
+#contact-heading-wrapper{
+    /* border: 1px solid red; */
+    width: 8rem;
+}
+#contact-section-wrapper{
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-top: 1rem;
+    height: 310px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ########### Contact Me Left Side style starts here ############# */
+#contact-section-left{
+    /* border: 1px solid green; */
+    height: 260px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact-through-wrapper{
+    width: 100%;
+    height: 70px;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-icon{
+    font-size: 1.7rem;
+    color: var(--secondary);
+    /* border: 1px solid red; */
+    margin-right: 0.5rem;
+}
+.contact-me-wrapper{
+    /* border: 1px solid red; */
+    width: 12.5rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact-me-wrapper h4{
+    color: var(--mild);
+    font-size: 1.1rem;
+}
+.contact-me-wrapper p{
+    color: var(--mild);
+    font-size: 1.1rem;
+}
+
+/* ########### Contact Me Left Side style starts here ############# */
+
+
+
+
+
+
+/* ############## Contact Me Right side style starts here ############### */
+#contact-section-right{
+    /* border: 1px solid green; */
+    height: 310px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#name-and-email-input-wrapper{
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.name-and-email-input{
+    height: 100%;
+    width: 48%;
+    /* border: 1px solid blue; */
+}
+.name-and-email-input h4{
+    color: var(--mild);
+    font-size: 1.2rem;
+}
+.name-and-email-input input{
+    width: 100%;
+    height: 2rem;
+    margin-top: 0.4rem;
+    border: 1px solid #7081b94b;
+    background-color: var(--primary);
+    color: var(--pure);
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+.name-and-email-input input:focus{
+    outline: none;
+}
+
+#message-input-wrapper{
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 10rem;
+}
+#message-input-wrapper h4{
+    font-size: 1.2rem;
+    color: var(--mild);
+}
+#message-input-wrapper textarea{
+    margin-top: 0.4em;
+    padding-top: 0.4rem;
+    width: 100%;
+    resize: none;
+    height: 8rem;
+    border: 1px solid #7081b94b;
+    background-color: var(--primary);
+    color: var(--pure);
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+#message-input-wrapper textarea:focus{
+    outline: none;
+}
+#submit-btn{
+    /* border: 1px solid green; */
+    width: 10rem;
+    height: 2.5rem;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#submit-btn:hover{
+    background-color: var(--info);
+}
+
+.red-border{
+    border: 1px solid red;
+}
+.default-border{
+    border: 1px solid #7081b94b;
+}
+
+/* ############## Contact Me Right side style ends here ############### */
+
+
+
+
+
+
+
+/* ############# Contact Me section style ends here ################ */
+
+
+
+
+
+
+/* ############# Footer section style Starts here ################## */
+#footer{
+    width: 100%;
+    height: 4.5rem;
+    position: absolute;
+    bottom: 0;
+    /* border: 1px solid green; */
+    background-color: var(--footer);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--mild);
+    font-size: 1.2rem;
+}
+
+
+
+/* ############# Footer section style Ends here ################## */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################## Responsive style section starts here #################### */
+
+
+
+@media only screen and (max-width:1400px){
+    .width-70{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:1078px){
+    .width-70{
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width:982px){
+    .width-70{
+        width: 90%;
+    }
+    #profile-picture-section{
+        height: 400px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    #picture-section{
+        /* border: 1px solid red; */
+        height: 35%;
+        width: 400px;
+        display: flex;
+    }
+    
+    #social-contact{
+        /* border: 1px solid red; */
+        height: 36%;
+        width: 280px;
+        align-self: flex-end;
+    }
+
+
+
+
+    #about{
+        height: 600px;
+        /* border: 1px solid yellow; */
+    }
+    #personal-details-container{
+        height: 85%;
+        /* border: 1px solid blue; */
+        flex-direction: column;
+    }
+    #personal-details-left-section{
+        width: 100%;
+        height: 45%;
+        /* border: 1px solid green; */
+    }
+    #personal-details-right-section{
+        width: 100%;
+        height: 45%;
+        /* border: 1px solid green; */
+    }
+
+
+
+
+    #education-and-skills{
+        /* height: 54vh; */
+        height: 950px;
+        /* border: 1px solid blue; */
+    }
+    #education-and-skills-wrapper{
+        /* border: 1px solid red; */
+        height: 900px;
+        flex-direction: column;
+    }
+    #education-and-skills-left-section{
+        height: 55%;
+        width: 100%;
+        /* border: 1px solid blue; */
+    }
+    #education-and-skills-right-section{
+        width: 100%;
+        height: 35%;
+        /* border: 1px solid blue; */
+        padding-top: 0rem;
+    }
+
+
+
+
+
+    #review-and-work-section{
+        height: 900px;
+        width: 100%;
+        /* border: 1px solid blue; */
+    }
+    #review-and-work-wrapper{
+        width: 100%;
+        height: 830px;
+        /* border: 1px solid red; */
+        flex-direction: column;
+    }
+    #review-section-wrapper{
+        height: 45%;
+        width: 100%;
+        /* border: 1px solid green; */
+    }
+    #work-section-wrapper{
+        height: 50%;
+        width: 100%;
+        /* border: 1px solid green; */
+    }
+
+
+
+
+
+
+
+    #contact{
+        /* border: 1px solid blue; */
+        width: 100%;
+        height: 850px;
+    }
+    #contact-section-wrapper{
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 690px;
+        flex-direction: column;
+    }
+    #contact-section-left{
+        /* border: 1px solid green; */
+        height: 260px;
+        width: 250px;
+    }
+    #contact-section-right{
+        /* border: 1px solid green; */
+        height: 330px;
+        width: 100%;
+    }
+
+}
+
+
+
+@media only screen and (max-width:790px){
+    #cv-section{
+        margin-top: 3rem;
+    }
+    #profile-picture-section{
+        align-items: center;
+    }
+    
+    #social-contact{
+        align-self: center;
+    }
+    #brand-section{
+        height: 20rem;
+    }
+    #name-and-email-input-wrapper{
+        /* border: 1px solid green; */
+        height: 10rem;
+        flex-direction: column;
+    }
+    .name-and-email-input{
+        width: 100%;
+        /* border: 1px solid blue; */
+    }
+
+
+
+
+
+    #increment-counter-section{
+        height: 25rem;
+        /* border: 1px solid blue; */
+        flex-direction: column;
+    }
+    .increment-item-wrapper{
+        width: 13rem;
+        height: 6rem;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
+
+@media only screen and (max-width:620px){
+    #review-and-work-section{
+        height: 1050px;
+        /* border: 1px solid blue; */
+    }
+    #review-and-work-wrapper{
+        height: 1000px;
+        /* border: 1px solid red; */
+    }
+    #review-section-wrapper{
+        height: 40%;
+        /* border: 1px solid green; */
+    }
+    #work-section-wrapper{
+        height: 55%;
+        /* border: 1px solid green; */
+    }
+}
+
+
+
+
+@media only screen and (max-width:468px){
+    #about{
+        height: 800px;
+        /* border: 1px solid yellow; */
+    }
+    #personal-details-container{
+        height: 85%;
+        /* border: 1px solid blue; */
+        flex-direction: column;
+    }
+    #personal-details-left-section{
+        width: 100%;
+        height: 45%;
+        /* border: 1px solid green; */
+    }
+    #personal-details-right-section{
+        width: 100%;
+        height: 45%;
+        /* border: 1px solid green; */
+    }
+
+
+
+
+    #education-section{
+        width: 50%;
+    }
+    #experience-section{
+        width: 45%;
+    }
+
+
+
+
+    #picture-section{
+        align-items: center;
+        width: 100%;
+    }
+    #profile-image-wrapper{
+        height: 100px;
+        width: 100px;
+    }
+    #upload-icon-wrapper{
+        display: none;
+    }
+    #name-heading{
+        font-size: 1.2rem;
+    }
+    #social-contact{
+        width: 230px;
+    }
+}
+
+
+
+
+@media only screen and (max-width:444px){
+    #slider-image-wrapper{
+        margin-top: 2rem;
+    }
+    #project-list{
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    #project-list img{
+        height: 110px;
+        width: 110px;
+        margin-right: 0rem;
+        margin-bottom: 2rem;
+    }
+    #brand-section{
+        height: 40rem;
+        justify-content: center;
+    }
+}
